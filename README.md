@@ -16,7 +16,6 @@ To work with the application, you need:
 
 ```bash
 git clone https://github.com/KyryloTestWork/kyrylo-code-first.git
-cd KyryloCodeFirstApplication
 ```
 ## To build and run the application, use the following Maven commands:
 ### Build the Application
