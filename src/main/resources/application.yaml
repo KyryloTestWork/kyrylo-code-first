@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: kyrylo-code-first
+
+  datasource:
+    url: jdbc:h2:mem:prices
+    driver-class-name: org.h2.Driver
+    data-username: user
+    password: user
+    platform: h2
+    initialization-mode: always
+    schema: classpath:db/migration/schema-h2.sql
+    data: classpath:db/migration/data-h2.sql
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
