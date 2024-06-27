@@ -17,17 +17,21 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode()
 public class PricePvpDTO implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
+    @Schema(example = "35455")
     private Integer productId;
 
+    @Schema(example = "1")
     private Integer brandId;
 
+    @Schema(example = "1")
     private Integer priceList;
 
+    @Schema(example = "2020-06-14T11:00")
     private LocalDateTime applicationDate;
 
+    @Schema(example = "35.5")
     private BigDecimal price;
 
+    @Schema(example = "EUR")
     private String currency;
 }
