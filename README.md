@@ -2,7 +2,7 @@
 
 ## Description
 
-KyryloCodeFirstApplication is a Spring Boot application that includes the functionality of a web service. The application provides a REST API for working with `Price` entities, exception handling using `GlobalExceptionHandler`, and the ability to perform testing using JUnit and Mockito.
+KyryloCodeFirstApplication is a Spring Boot application that includes the functionality of a web service. The application provides a REST API for working with `Price` entity, exception handling using `GlobalExceptionHandler`, and the ability to perform testing using JUnit and Mockito.
 
 ## Prerequisites
 
@@ -45,6 +45,6 @@ The application uses GlobalExceptionHandler to handle exceptions globally. Here 
 - `handleEntityValidationException` for ValidationException
 
 ## Additional Information
-- The application uses `Spring Boot 2.5.4`.
+- The application uses `Spring Boot 2.3.4`.
 - Integration tests use `@SpringBootTest`, `MockMvc` and `Cucumber`.
 - Unit tests are written using `JUnit 5` and `Mockito`.
