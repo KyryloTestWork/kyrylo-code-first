@@ -26,7 +26,7 @@ import com.kyrylocodefirst.adapters.api.dto.PricePvpDTO;
 import com.kyrylocodefirst.adapters.api.mapper.PriceToDTOMapper;
 import com.kyrylocodefirst.adapters.api.mapper.PriceToPricePvpDTOMapper;
 import com.kyrylocodefirst.domain.model.Price;
-import com.kyrylocodefirst.domain.ports.PriceService;
+import com.kyrylocodefirst.domain.ports.PricePort;
 
 @ExtendWith(MockitoExtension.class)
 class PriceControllerTest {
@@ -34,7 +34,7 @@ class PriceControllerTest {
     @InjectMocks
     private PriceController priceController;
     @Mock
-    private PriceService service;
+    private PricePort service;
     @Mock
     private PriceToDTOMapper priceMapper;
     @Mock

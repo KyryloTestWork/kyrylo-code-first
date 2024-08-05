@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.kyrylocodefirst.domain.model.Price;
 
-public interface PriceService {
+public interface PricePort {
 
     List<Price> getPrices();
 

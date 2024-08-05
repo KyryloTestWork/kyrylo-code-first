@@ -22,7 +22,7 @@ import com.kyrylocodefirst.adapters.api.dto.PriceDTO;
 import com.kyrylocodefirst.adapters.api.dto.PricePvpDTO;
 import com.kyrylocodefirst.adapters.api.mapper.PriceToDTOMapper;
 import com.kyrylocodefirst.adapters.api.mapper.PriceToPricePvpDTOMapper;
-import com.kyrylocodefirst.domain.ports.PriceService;
+import com.kyrylocodefirst.domain.ports.PricePort;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -35,7 +35,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PriceController {
 
-    private final PriceService service;
+    private final PricePort service;
     private final PriceToDTOMapper priceMapper;
     private final PriceToPricePvpDTOMapper priceToPricePvpDTOMapper;
 

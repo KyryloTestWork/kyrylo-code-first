@@ -1,4 +1,4 @@
-package com.kyrylocodefirst.adapters.db.mapper;
+package com.kyrylocodefirst.adapters.service.mapper;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.kyrylocodefirst.domain.ports.impl;
+package com.kyrylocodefirst.adapters.service;
 
 import static org.apache.commons.lang3.math.NumberUtils.INTEGER_ONE;
 import static org.apache.commons.lang3.math.NumberUtils.INTEGER_TWO;
@@ -28,7 +28,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.kyrylocodefirst.adapters.db.entity.PriceEntity;
-import com.kyrylocodefirst.adapters.db.mapper.PriceEntityToModelMapper;
+import com.kyrylocodefirst.adapters.service.mapper.PriceEntityToModelMapper;
 import com.kyrylocodefirst.adapters.db.repository.JpaPriceRepository;
 import com.kyrylocodefirst.domain.model.Price;
 

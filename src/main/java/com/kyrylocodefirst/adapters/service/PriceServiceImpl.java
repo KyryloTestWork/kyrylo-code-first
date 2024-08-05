@@ -1,4 +1,4 @@
-package com.kyrylocodefirst.domain.ports.impl;
+package com.kyrylocodefirst.adapters.service;
 
 import java.time.LocalDateTime;
 import java.util.Comparator;
@@ -10,15 +10,15 @@ import javax.validation.ValidationException;
 import org.springframework.stereotype.Service;
 
 import com.kyrylocodefirst.adapters.db.entity.PriceEntity;
-import com.kyrylocodefirst.adapters.db.mapper.PriceEntityToModelMapper;
+import com.kyrylocodefirst.adapters.service.mapper.PriceEntityToModelMapper;
 import com.kyrylocodefirst.adapters.db.repository.JpaPriceRepository;
 import com.kyrylocodefirst.domain.model.Price;
-import com.kyrylocodefirst.domain.ports.PriceService;
+import com.kyrylocodefirst.domain.ports.PricePort;
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class PriceServiceImpl implements PriceService {
+public class PriceServiceImpl implements PricePort {
 
     private final JpaPriceRepository repository;
     private final PriceEntityToModelMapper mapper;

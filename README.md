@@ -26,7 +26,7 @@ mvn clean install
 ````bash
 mvn spring-boot:run
 ````
-The application will start and will be available at http://localhost:8080/swagger-ui/index.html?configUrl=/api-docs/swagger-config#/.
+The application will start and will be available at http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/.
 
 ## Running Tests
 The application includes unit and integration tests that can be run using Maven.
